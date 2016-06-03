@@ -1,0 +1,13 @@
+<h1>{{foo}}</h1>
+<form ng-submit="addChat()">
+	<input type="text" ng-model="chatId" style="border: 1px solid black;">
+	<input type="text" ng-model="myVar" style="border: 1px solid black;">
+	<input type="submit">
+</form>
+<ul>
+	<li ng-repeat="chat in chats">
+		<h4>{{chat.sender}}</h4>
+		<p>{{chat.date}}</p>
+		<a href="#">Delete</a>
+	</li>
+</ul>
